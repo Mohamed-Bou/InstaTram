@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.Ecran1.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_ecran2"
+            app:destination="@id/ecran2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.myapplication.ui.Ecran1.map.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.myapplication.ui.Ecran1.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <activity
+        android:id="@+id/ecran2"
+        android:name="com.example.myapplication.ui.Ecran2.Ecran2"
+        android:label="activity_ecran2"
+        tools:layout="@layout/activity_ecran2" >
+        <argument
+            android:name="idStation"
+            app:argType="integer" />
+        <argument
+            android:name="StationName"
+            app:argType="string" />
+    </activity>
+</navigation>
