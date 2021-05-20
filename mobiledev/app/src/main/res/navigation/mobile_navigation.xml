@@ -19,7 +19,11 @@
         android:id="@+id/mapsFragment"
         android:name="com.example.myapplication.ui.Ecran1.map.MapsFragment"
         android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_ecran2"
+            app:destination="@id/ecran2" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.myapplication.ui.Ecran1.settings.SettingsFragment"
