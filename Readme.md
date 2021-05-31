@@ -18,9 +18,9 @@ chaque arrêt au niveau des différentes stations de la ville  (stations de Bus,
   <div class="column" style="flex: 50%;
   padding: 0 4px;">
     <img src="https://user-images.githubusercontent.com/71210522/120118830-e8346300-c194-11eb-8b77-770a06dd994e.jpg" style=" margin-top: 8px;
-  vertical-align: middle">
+  vertical-align: middle"  hight="500" width="300">
     <img src="https://user-images.githubusercontent.com/71210522/120118833-e9659000-c194-11eb-9d41-2b01cd1d2004.jpg" style=" margin-top: 8px;
-  vertical-align: middle">
+  vertical-align: middle"  hight="500" width="300">
   </div>
 </div>
 
